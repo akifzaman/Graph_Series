@@ -35,7 +35,6 @@ const ll N = 1e6 + 1;
 
 ll element, relation, ans=0;
 ll parent[100001], Rank[100001];
-bool visited[100001];
 
 ll findRepresentative(ll n){
     if(parent[n]<0){
@@ -68,7 +67,6 @@ void solve(){
     for(ll i=1;i<=100001;i++){
         parent[i]=-1;
         Rank[i]=1;
-        visited[i]=false;
     }
 
     cin>>element>>relation;
